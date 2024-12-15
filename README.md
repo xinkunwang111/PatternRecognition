@@ -1,1 +1,4 @@
 # PatternRecognition
+I completed a project using R for urban land cover classification focused on segmenting the PaviaU hyperspectral image. The approach leveraged dimensionality reduction techniques like PCA and LDA to simplify the dataset (103 spectral bands) while retaining critical information for segmentation tasks.
+
+Instead of directly segmenting the image, I treated it as a classification problem. Using Gradient Boosting Trees, I ranked feature importance to identify key spectral bands. The reduced data was fed into classifiers, including Naïve Bayes, KNN, and SVM. SVM, with hyperparameter tuning, achieved the best accuracy of 95.19%. This methodology optimized computation and highlighted R's strength in combining statistical learning and dimensionality reduction for complex image segmentation tasks.
